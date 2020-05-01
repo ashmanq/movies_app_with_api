@@ -21,7 +21,16 @@ const createRouter = function(collection) {
       errorFunction(error, res);
     })
   });
-  
+
+  router.delete('/:id', function(req, res) {
+    const id = req.params.id;
+    collection.deleteOne({_id:ObjectID(id)})
+    .then(doc => res.json(doc))
+    .catch((error) => {
+      errorFunction(error, res);
+    })
+  });
+
   return router;
 };
 
