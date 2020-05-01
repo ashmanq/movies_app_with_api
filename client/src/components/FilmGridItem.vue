@@ -13,12 +13,20 @@
 
 <script>
 
+import MovieService from '@/services/MovieService.js';
+import {eventBus} from '@/main.js';
+
 export default {
   name: 'film-card',
   props: ['film'],
+  mounted() {
+
+  },
   methods: {
     deleteFilm(){
       // TODO: Code deleteFilm method
+      MovieService.deleteMovie(this.film._id)
+      .then(eventBus.$emit('delete-film', this.film._id));
     },
     selectFilm() {
       //TODO: Code film Selected Method
