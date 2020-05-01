@@ -12,7 +12,8 @@ db.movies.insertMany([
     Crew: {
       Director: "Frank Darabont",
       Producer: "Stephen King",
-    }
+    },
+    plot: "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
   },
   {
     title: "Inception",
@@ -23,7 +24,8 @@ db.movies.insertMany([
     Crew: {
       Director: "Christopher Nolan",
       Producer: "Zakaria Alaoui",
-    }
+    },
+    plot: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
   },
   {
     title: "Pulp Fiction",
@@ -34,7 +36,8 @@ db.movies.insertMany([
     Crew: {
       Director: "Quentin Tarantino",
       Producer: "Lawrence Bender",
-    }
+    },
+    plot: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
   },
   {
     title: "Spirited Away",
@@ -45,7 +48,8 @@ db.movies.insertMany([
     Crew: {
       Director: "Hayao Miyazaki",
       Producer: "Toshio Suzuki",
-    }
+    },
+    plot: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
   },
 
 ]);
