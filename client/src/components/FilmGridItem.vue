@@ -30,6 +30,7 @@ export default {
     },
     selectFilm() {
       //TODO: Code film Selected Method
+      eventBus.$emit('selected-film', this.film);
     }
   }
 }
@@ -42,7 +43,7 @@ export default {
    border-radius: 5px;
    padding: 20px;
    margin: 10px;
-   width: 25vw;
+   width: 20vw;
  }
 
  .action-btn {
